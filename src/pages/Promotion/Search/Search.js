@@ -1,9 +1,8 @@
-import logo from './logo.svg';
+import React from 'react';
 import PromotionCard from 'components/Promotion/Card/Card';
 
 
-const App = () => {
-  const promotion = {
+const promotion = {
     "id": 1,
     "title": "Kit Notebook Acer Aspire 3 + Mochila Green, A315-41-R790, AMD Ryzen 3 2200U Dual Core",
     "price": 1799,
@@ -16,17 +15,21 @@ const App = () => {
       }
     ]
   };
-  
-  return (
-    <div className="App"
-      style={{
-        maxWidth:800,
-        margin: '30px auto'
-      }}
-    >
-      <PromotionCard promotion= {promotion} />
-    </div>
-  );
-}
 
-export default App;
+
+const PagesPromotionSearch = () =>{
+
+    return (
+        <div 
+            style={{
+            maxWidth:800,
+            margin: '30px auto'
+            }}
+        >
+         <PromotionCard promotion= {promotion} />
+
+        </div>    
+    );
+};
+
+export default PagesPromotionSearch;
